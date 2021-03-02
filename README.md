@@ -1,4 +1,4 @@
 # Hearthstone
+<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="40" height="40" />
 
-<img src="https://filebin.net/greznfylzfyeb8vh/hearthstone.gif?t=u80hynmk" width="600" height="500" />
 
