@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphics.ChoosePassives">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1041.0" layoutX="5.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/battle1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BCard1" fitHeight="282.0" fitWidth="180.0" layoutX="215.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="BCard2" fitHeight="289.0" fitWidth="180.0" layoutX="410.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="BCard3" fitHeight="289.0" fitWidth="180.0" layoutX="604.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="X1" fitHeight="42.0" fitWidth="44.0" layoutX="330.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/X.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="X2" fitHeight="42.0" fitWidth="44.0" layoutX="528.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/X.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="X3" fitHeight="42.0" fitWidth="44.0" layoutX="721.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/X.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Battlefield" layoutX="466.0" layoutY="484.0" onAction="#battlefield" text="Battlefield" />
+   </children>
+</AnchorPane>

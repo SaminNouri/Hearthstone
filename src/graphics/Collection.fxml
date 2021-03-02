@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphics.CollectionController">
+   <children>
+      <Pane fx:id="MainPane">
+         <children>
+            <ImageView fx:id="CollectionImage" fitHeight="500.0" fitWidth="800.0" pickOnBounds="true">
+               <image>
+                  <Image url="@pictures/EDIT1.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="SearchBar" layoutX="383.0" layoutY="467.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="92.0" promptText="search" unFocusColor="#631818">
+               <font>
+                  <Font name="Broadway" size="11.0" />
+               </font>
+               <focusColor>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#ff7777" />
+                        <Stop color="#72360b" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </focusColor>
+            </JFXTextField>
+            <JFXComboBox fx:id="FilterComboBox" focusColor="#754a16" layoutX="64.0" layoutY="33.0" onAction="#filterAction" prefHeight="25.0" prefWidth="126.0" promptText="Filter" />
+            <Label fx:id="HeroTypeLabel" layoutX="276.0" layoutY="45.0" prefHeight="35.0" prefWidth="117.0" text="Neutral" textAlignment="RIGHT" textFill="#8d4f26">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="BackButton" layoutX="691.0" layoutY="472.0" onAction="#BackAction" text="back" textFill="#3c1605">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="QuitButton" layoutX="733.0" onAction="#quitAction" text="Quit" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.8380952380952381" endY="0.6333333333333333">
+                     <stops>
+                        <Stop color="#fcfcfc" />
+                        <Stop color="#dd0d0d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton fx:id="Mana0" layoutX="127.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#mana0Action" text="0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient cycleMethod="REPEAT" endX="0.8380952380952381" endY="0.6333333333333333">
+                     <stops>
+                        <Stop color="#b2a6a6" />
+                        <Stop color="#0f8edb" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton fx:id="Mana1" layoutX="151.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#mana1Action" text="1" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Mana2" layoutX="176.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#mana2Action" text="2" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Mana3" layoutX="201.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#mana3Action" text="3" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Mana4" layoutX="225.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#mana4Action" text="4" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Mana5" layoutX="250.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#mana5Action" text="5" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Mana6" layoutX="274.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#mana6Action" text="6" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Mana7" layoutX="296.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#mana7Action" text="7" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <ScrollPane fx:id="MainScrollPane" fitToWidth="true" hbarPolicy="ALWAYS" layoutX="601.0" layoutY="37.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="151.0" vbarPolicy="ALWAYS">
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor>
+               <content>
+                  <Pane fx:id="SubPane">
+                     <children>
+                        <ImageView fx:id="ScrollDeckImage" fitHeight="598.0" fitWidth="141.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@pictures/completemenu1.jpg" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="Deck_1_Button" layoutX="40.0" layoutY="2.0" onAction="#deck_1_Action" prefHeight="25.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_2_Button" layoutX="40.0" layoutY="40.0" onAction="#deck_2_Action" prefHeight="25.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_3_Button" layoutX="40.0" layoutY="80.0" onAction="#deck_3_Action" prefHeight="25.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_4_Button" layoutX="40.0" layoutY="115.0" onAction="#deck_4_Action" prefHeight="25.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_5_Button" layoutX="40.0" layoutY="154.0" onAction="#deck_5_Action" prefHeight="25.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_6_Button" layoutX="40.0" layoutY="190.0" onAction="#deck_6_Action" prefHeight="25.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_7_Button" layoutX="40.0" layoutY="226.0" onAction="#deck_7_Action" prefHeight="25.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_8_Button" layoutX="40.0" layoutY="267.0" onAction="#deck_8_Action" prefHeight="25.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_9_Button" layoutX="42.0" layoutY="306.0" onAction="#deck_9_Action" prefHeight="25.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_10_Button" layoutX="42.0" layoutY="341.0" onAction="#deck_10_Action" prefHeight="25.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_11_Button" layoutX="42.0" layoutY="380.0" onAction="#deck_11_Action" prefHeight="25.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_12_Button" layoutX="42.0" layoutY="415.0" onAction="#deck_12_Action" prefHeight="0.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_13_Button" layoutX="42.0" layoutY="455.0" onAction="#deck_13_Action" prefHeight="25.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_14_Button" layoutX="42.0" layoutY="494.0" onAction="#deck_14_Action" prefHeight="25.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_15_Button" layoutX="40.0" layoutY="523.0" onAction="#deck_15_Action" prefHeight="35.0" prefWidth="100.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="Deck_16_Button" layoutX="27.0" layoutY="563.0" onAction="#deck_16_Action" prefHeight="25.0" prefWidth="132.0" text="unknown deck">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff7777" />
+                                    <Stop color="#72360b" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <ripplerFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#9e2d2a" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </ripplerFill>
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXRadioButton fx:id="Deck_1_RatioButton" layoutX="8.0" layoutY="7.0" onAction="#deck_1_RemoveAction" text="1-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_2_RatioButton" layoutX="8.0" layoutY="45.0" onAction="#deck_2_RemoveAction" text="2-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_3_RatioButton" layoutX="8.0" layoutY="85.0" onAction="#deck_3_RemoveAction" text="3-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_4_RatioButton" layoutX="8.0" layoutY="120.0" onAction="#deck_4_RemoveAction" text="4-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_5_RatioButton" layoutX="8.0" layoutY="158.0" onAction="#deck_5_RemoveAction" text="5-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_6_RatioButton" layoutX="8.0" layoutY="195.0" onAction="#deck_6_RemoveAction" text="6-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_7_RatioButton" layoutX="8.0" layoutY="229.0" onAction="#deck_7_RemoveAction" text="7-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_8_RatioButton" layoutX="8.0" layoutY="272.0" onAction="#deck_8_RemoveAction" text="8-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_9_RatioButton" layoutX="7.0" layoutY="312.0" onAction="#deck_9_RemoveAction" text="9-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_10_RatioButton" layoutX="7.0" layoutY="347.0" onAction="#deck_10_RemoveAction" text="10-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_11_RatioButton" layoutX="7.0" layoutY="386.0" onAction="#deck_11_RemoveAction" text="11-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_12_RatioButton" layoutX="7.0" layoutY="420.0" onAction="#deck_12_RemoveAction" text="12-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_13_RatioButton" layoutX="7.0" layoutY="461.0" onAction="#deck_13_RemoveAction" text="13-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_14_RatioButton" layoutX="7.0" layoutY="498.0" onAction="#deck_14_RemoveAction" text="14-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_15_RatioButton" layoutX="7.0" layoutY="534.0" onAction="#deck_15_RemoveAction" text="15-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Deck_16_RatioButton" layoutX="8.0" layoutY="570.0" onAction="#deck_16_RemoveAction" text="16-" textFill="#e47777">
+                           <font>
+                              <Font name="System Bold" size="11.0" />
+                           </font>
+                        </JFXRadioButton>
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+            <JFXButton fx:id="RemoveButton" layoutX="619.0" layoutY="1.0" onAction="#removeAction" text="Remove" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.8380952380952381" endY="0.6333333333333333">
+                     <stops>
+                        <Stop color="#fcfcfc" />
+                        <Stop color="#dd0d0d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <ImageView fx:id="Card1" fitHeight="150.0" fitWidth="151.0" layoutX="76.0" layoutY="91.0" onMouseClicked="#loadCard1" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Card2" fitHeight="150.0" fitWidth="151.0" layoutX="201.0" layoutY="91.0" onMouseClicked="#loadCard2" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Card3" fitHeight="150.0" fitWidth="151.0" layoutX="329.0" layoutY="91.0" onMouseClicked="#loadCard3" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Card4" fitHeight="150.0" fitWidth="151.0" layoutX="445.0" layoutY="91.0" onMouseClicked="#loadCard4" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Card5" fitHeight="150.0" fitWidth="151.0" layoutX="76.0" layoutY="267.0" onMouseClicked="#loadCard5" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Card6" fitHeight="150.0" fitWidth="151.0" layoutX="201.0" layoutY="267.0" onMouseClicked="#loadCard6" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Card7" fitHeight="150.0" fitWidth="151.0" layoutX="329.0" layoutY="267.0" onMouseClicked="#loadCard7" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="Card8" fitHeight="150.0" fitWidth="151.0" layoutX="445.0" layoutY="267.0" onMouseClicked="#loadCard8" pickOnBounds="true" preserveRatio="true" />
+            <JFXButton fx:id="NextButton" layoutX="540.0" layoutY="240.0" onAction="#nextAction" text="Next" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.32857142857142857" startY="0.20952380952380953">
+                     <stops>
+                        <Stop color="#9a5718" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton fx:id="MainMenu" layoutX="259.0" onAction="#mainMenuAction" text="Main Menu" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.8380952380952381" endY="0.6333333333333333">
+                     <stops>
+                        <Stop color="#fcfcfc" />
+                        <Stop color="#dd0d0d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton fx:id="PreviousButton" layoutX="14.0" layoutY="238.0" onAction="#previousAction" text="Previous" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.32857142857142857" startY="0.20952380952380953">
+                     <stops>
+                        <Stop color="#9a5718" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <ImageView fx:id="ManaImage" fitHeight="17.0" fitWidth="18.0" layoutX="14.0" layoutY="465.0" onMouseClicked="#manaAction" pickOnBounds="true">
+               <image>
+                  <Image url="@pictures/mana_crystal.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="ManaTextField" focusColor="#06066b" layoutX="34.0" layoutY="462.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="25.0" promptText="Mana" unFocusColor="#4163dd">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fx:id="SearchMana" fitHeight="19.0" fitWidth="18.0" layoutX="362.0" layoutY="469.0" onMouseClicked="#submitSearch" pickOnBounds="true">
+               <image>
+                  <Image url="@pictures/mana_crystal.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="BackButton" layoutX="748.0" layoutY="467.0" onAction="#backAction" text="Back" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.8380952380952381" endY="0.6333333333333333">
+                     <stops>
+                        <Stop color="#fcfcfc" />
+                        <Stop color="#dd0d0d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

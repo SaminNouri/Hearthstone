@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphics.ChooseDeckController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/cd1.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="BackButton" layoutX="640.0" layoutY="445.0" onAction="#backAction" text="Back" textFill="#431d02">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#803009" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="CollectionButton" layoutX="233.0" layoutY="444.0" onAction="#collectionAction" prefHeight="25.0" prefWidth="136.0" text="My Collection" textFill="#fceeee">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.06666666666666667" startY="0.06666666666666667">
+               <stops>
+                  <Stop color="#171515" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="PlayButton" layoutX="553.0" layoutY="387.0" onAction="#playAction" text="Play" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.16190476190476188" startY="0.12380952380952381">
+               <stops>
+                  <Stop color="#0c0661" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="NextButton" layoutX="458.0" layoutY="234.0" onAction="#nextAction" text="Next">
+         <font>
+            <Font name="System Bold Italic" size="9.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="MainHeroImage" fitHeight="240.0" fitWidth="153.0" layoutX="510.0" layoutY="135.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/paladin.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Deck1" layoutX="150.0" layoutY="119.0" onAction="#deck1Action" text="Button" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Deck2" layoutX="250.0" layoutY="119.0" onAction="#deck2Action" text="Button" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Deck3" layoutX="350.0" layoutY="119.0" onAction="#deck3Action" text="Button" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Deck4" layoutX="150.0" layoutY="224.0" onAction="#deck4Action" text="Button" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Deck5" layoutX="250.0" layoutY="224.0" onAction="#deck5Action" text="Button" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Deck6" layoutX="350.0" layoutY="224.0" onAction="#deck6Action" text="Button" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Deck7" layoutX="150.0" layoutY="329.0" onAction="#deck7Action" text="Button" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Deck8" layoutX="250.0" layoutY="329.0" onAction="#deck8Action" text="Button" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Deck9" layoutX="350.0" layoutY="329.0" onAction="#deck9Action" text="Button" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="10.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="PreviousButton" layoutX="89.0" layoutY="245.0" onAction="#previousAction" text="Previous">
+         <font>
+            <Font name="System Bold Italic" size="9.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="QuitButton" layoutX="707.0" layoutY="24.0" onAction="#quitAction" prefHeight="29.0" prefWidth="68.0" text="Quit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="MainMenu" layoutY="14.0" onAction="#mainMenuAction" prefHeight="39.0" prefWidth="136.0" text="MainMenu" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="ChooseEnemyDeck" layoutX="136.0" layoutY="50.0" prefHeight="25.0" prefWidth="85.0" promptText="Enemy" />
+   </children>
+</AnchorPane>

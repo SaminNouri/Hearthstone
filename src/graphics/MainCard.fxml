@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="93.0" prefWidth="73.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphics.CardImageCreatorController">
+   <children>
+      <ImageView fx:id="CardPhoto" fitHeight="93.0" fitWidth="73.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/card-photoes/neutral/Abomination.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="DeathrattleImage" fitHeight="6.0" fitWidth="8.0" layoutX="19.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/skull3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="BattlecryImage" fitHeight="5.0" fitWidth="9.0" layoutX="12.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/star1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="QuestRewardImage" fitHeight="7.0" fitWidth="8.0" layoutX="59.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/reward'.png" />
+         </image>
+      </ImageView>
+      <Circle fx:id="AttackShape" fill="#7f8386" layoutX="10.0" layoutY="82.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="HpShape" fill="#c6251f" layoutX="60.0" layoutY="82.0" radiusX="10.0" radiusY="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fx:id="DivineShieldImage" fitHeight="6.0" fitWidth="6.0" layoutX="57.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/sh.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="TauntImage" fitHeight="5.0" fitWidth="5.0" layoutX="32.0" layoutY="81.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/lock1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="AttackLabel" layoutX="6.0" layoutY="74.0" prefHeight="16.0" prefWidth="13.0" text="3">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ChargeImage" fitHeight="6.0" fitWidth="5.0" layoutX="25.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/knife.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="RushImage" fitHeight="5.0" fitWidth="5.0" layoutX="40.0" layoutY="81.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/gun2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="HpLabel" layoutX="56.0" layoutY="74.0" prefHeight="16.0" prefWidth="11.0" text="3">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="CardName" layoutX="1.0" layoutY="1.0" prefHeight="4.0" prefWidth="20.0" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="CardIndex" layoutX="47.0" layoutY="-2.0" visible="false" />
+      <Label fx:id="HeroesHand" layoutX="25.0" layoutY="23.0" visible="false" />
+   </children>
+</AnchorPane>

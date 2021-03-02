@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphics.BoldCardController">
+   <children>
+      <ImageView fx:id="MainBlurImage" fitHeight="500.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/collectionBlur1.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur radius="12.25" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="BoldCard" fitHeight="326.0" fitWidth="237.0" layoutX="180.0" layoutY="34.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/card-photoes/mage/Arcane-Explosion.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ExplanationImage" fitHeight="229.0" fitWidth="275.0" layoutX="438.0" layoutY="114.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/blurPart.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Back" layoutX="317.0" layoutY="388.0" onAction="#backToCollection" prefHeight="46.0" prefWidth="166.0" text="Back ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="CnsRarity" layoutX="501.0" layoutY="156.0" prefHeight="17.0" prefWidth="35.0" text="Rarity:" />
+      <Label fx:id="CardsRarity" layoutX="576.0" layoutY="156.0" prefHeight="17.0" prefWidth="111.0" text="m" />
+      <Label fx:id="CnsCoin" layoutX="510.0" layoutY="171.0" text="coin:" />
+      <Label fx:id="Coin" layoutX="576.0" layoutY="171.0" prefHeight="17.0" prefWidth="55.0" text="0" />
+      <Label fx:id="CnsRace" layoutX="510.0" layoutY="188.0" text="Race:" />
+      <Label fx:id="Race" layoutX="576.0" layoutY="188.0" prefHeight="17.0" prefWidth="62.0" text="none" />
+      <Label fx:id="CnsCardNumbers" layoutX="455.0" layoutY="205.0" prefHeight="17.0" prefWidth="93.0" text="possesed cards:" />
+      <Label fx:id="CardNumbers" layoutX="575.0" layoutY="205.0" prefHeight="17.0" prefWidth="62.0" text="0" />
+      <Label fx:id="CnsHeroType" layoutX="486.0" layoutY="220.0" text="HeroType:" />
+      <Label fx:id="HeroType" layoutX="571.0" layoutY="220.0" prefHeight="17.0" prefWidth="121.0" text="Neutral" />
+      <Label fx:id="CnsType" layoutX="512.0" layoutY="237.0" text="Type:" />
+      <Label fx:id="Type" layoutX="571.0" layoutY="239.0" prefHeight="17.0" prefWidth="111.0" text="MinionCard" />
+      <ImageView fx:id="Lock" fitHeight="39.0" fitWidth="45.0" layoutX="289.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton fx:id="BackToStore" layoutX="133.0" layoutY="388.0" onAction="#backToStore" prefHeight="46.0" prefWidth="166.0" text="Buy Card">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

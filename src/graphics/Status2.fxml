@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphics.StatusSecondController">
+   <children>
+      <Pane>
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="808.0" layoutX="-11.0" layoutY="1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@pictures/EDIT1.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="QuitButton" layoutX="747.0" layoutY="-1.0" onAction="#quitAction" text="Quit" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.8380952380952381" endY="0.6333333333333333">
+                     <stops>
+                        <Stop color="#fcfcfc" />
+                        <Stop color="#dd0d0d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <ScrollPane layoutX="577.0" layoutY="5.0" prefHeight="463.0" prefWidth="180.0" vbarPolicy="ALWAYS">
+               <content>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="892.0" prefWidth="167.0">
+                     <children>
+                        <ImageView fitHeight="914.0" fitWidth="180.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@pictures/completedeck1.jpg" />
+                           </image>
+                        </ImageView>
+                        <JFXRadioButton fx:id="Card1Deck" layoutX="19.0" layoutY="110.0" prefHeight="17.0" prefWidth="131.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card3Deck" layoutX="18.0" layoutY="160.0" prefHeight="17.0" prefWidth="137.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card4Deck" layoutX="18.0" layoutY="185.0" prefHeight="17.0" prefWidth="141.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card5Deck" layoutX="18.0" layoutY="210.0" prefHeight="17.0" prefWidth="143.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card6Deck" layoutX="19.0" layoutY="235.0" prefHeight="17.0" prefWidth="143.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card9Deck" layoutX="19.0" layoutY="310.0" prefHeight="17.0" prefWidth="146.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card10Deck" layoutX="19.0" layoutY="335.0" prefHeight="17.0" prefWidth="143.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card8Deck" layoutX="19.0" layoutY="285.0" prefHeight="17.0" prefWidth="140.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card11Deck" layoutX="19.0" layoutY="360.0" prefHeight="17.0" prefWidth="143.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card12Deck" layoutX="19.0" layoutY="385.0" prefHeight="17.0" prefWidth="143.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card13Deck" layoutX="19.0" layoutY="410.0" prefHeight="17.0" prefWidth="145.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card14Deck" layoutX="19.0" layoutY="435.0" prefHeight="17.0" prefWidth="150.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card15Deck" layoutX="19.0" layoutY="460.0" prefHeight="17.0" prefWidth="143.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card16Deck" layoutX="19.0" layoutY="485.0" prefHeight="17.0" prefWidth="142.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card17Deck" layoutX="19.0" layoutY="510.0" prefHeight="17.0" prefWidth="145.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card18Deck" layoutX="19.0" layoutY="535.0" prefHeight="17.0" prefWidth="142.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card19Deck" layoutX="19.0" layoutY="560.0" prefHeight="17.0" prefWidth="141.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card20Deck" layoutX="19.0" layoutY="585.0" prefHeight="17.0" prefWidth="140.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card22Deck" layoutX="19.0" layoutY="635.0" prefHeight="17.0" prefWidth="141.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card21Deck" layoutX="19.0" layoutY="610.0" prefHeight="17.0" prefWidth="174.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card2Deck" layoutX="19.0" layoutY="135.0" prefHeight="17.0" prefWidth="138.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card23Deck" layoutX="19.0" layoutY="660.0" prefHeight="17.0" prefWidth="134.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card24Deck" layoutX="19.0" layoutY="685.0" prefHeight="17.0" prefWidth="138.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card25Deck" layoutX="19.0" layoutY="710.0" prefHeight="17.0" prefWidth="146.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card26Deck" layoutX="19.0" layoutY="735.0" prefHeight="17.0" prefWidth="141.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card7Deck" layoutX="19.0" layoutY="760.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card28Deck" layoutX="19.0" layoutY="785.0" prefHeight="17.0" prefWidth="137.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card27Deck" layoutX="19.0" layoutY="760.0" prefHeight="17.0" prefWidth="145.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card29Deck" layoutX="19.0" layoutY="810.0" prefHeight="17.0" prefWidth="139.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="Card30Deck" layoutX="19.0" layoutY="835.0" prefHeight="17.0" prefWidth="142.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <TextField fx:id="DecksNameTextField" layoutX="68.0" layoutY="55.0" onAction="#getDecksName" prefHeight="25.0" prefWidth="92.0" text="unknown" />
+                        <JFXRadioButton fx:id="Card7Deck" layoutX="19.0" layoutY="260.0" prefHeight="17.0" prefWidth="143.0" text="unknown" textFill="#f2eded">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <Label layoutX="19.0" layoutY="59.0" prefHeight="17.0" prefWidth="43.0" text="name:" textFill="#805a77">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <JFXButton fx:id="BackButton" layoutX="747.0" layoutY="464.0" onAction="#backAction" text="Back" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.8380952380952381" endY="0.6333333333333333">
+                     <stops>
+                        <Stop color="#fcfcfc" />
+                        <Stop color="#dd0d0d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton fx:id="MainMenu" layoutX="277.0" layoutY="5.0" onAction="#mainMenuAction" prefHeight="31.0" prefWidth="115.0" text="Main Menu" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.8380952380952381" endY="0.6333333333333333">
+                     <stops>
+                        <Stop color="#fcfcfc" />
+                        <Stop color="#dd0d0d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <Label layoutX="97.0" layoutY="100.0" prefHeight="17.0" prefWidth="246.0" text="ratio of wins to all of the played games:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="ratio" layoutX="357.0" layoutY="101.0" prefHeight="17.0" prefWidth="78.0" text="1" />
+            <Label layoutX="97.0" layoutY="140.0" prefHeight="17.0" prefWidth="246.0" text="number of wins:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="wins" layoutX="357.0" layoutY="141.0" prefHeight="17.0" prefWidth="99.0" text="0" />
+            <Label layoutX="97.0" layoutY="176.0" prefHeight="17.0" prefWidth="246.0" text="number of games:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="games" layoutX="357.0" layoutY="177.0" prefHeight="17.0" prefWidth="99.0" text="0" />
+            <Label layoutX="97.0" layoutY="214.0" prefHeight="17.0" prefWidth="246.0" text="average cost of cards:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="costs" layoutX="357.0" layoutY="215.0" prefHeight="17.0" prefWidth="99.0" text="0" />
+            <Label layoutX="97.0" layoutY="251.0" prefHeight="17.0" prefWidth="246.0" text="Herotype:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="Heotype" layoutX="357.0" layoutY="252.0" prefHeight="17.0" prefWidth="99.0" text="NONE" />
+            <Label layoutX="97.0" layoutY="294.0" prefHeight="17.0" prefWidth="246.0" text="most used card:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="mostUsedCard" layoutX="357.0" layoutY="295.0" prefHeight="17.0" prefWidth="99.0" text="NONE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

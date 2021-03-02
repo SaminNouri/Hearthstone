@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphics.CardBackController">
+   <children>
+      <Pane fx:id="MainPane">
+         <children>
+            <ImageView fx:id="CollectionImage" fitHeight="500.0" fitWidth="800.0" pickOnBounds="true">
+               <image>
+                  <Image url="@pictures/EDIT1.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="SearchBar" layoutX="383.0" layoutY="467.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#searchAction" prefHeight="17.0" prefWidth="92.0" promptText="search" unFocusColor="#631818">
+               <font>
+                  <Font name="Broadway" size="11.0" />
+               </font>
+               <focusColor>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#ff7777" />
+                        <Stop color="#72360b" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </focusColor>
+            </JFXTextField>
+            <Label fx:id="HeroTypeLabel" layoutX="276.0" layoutY="45.0" prefHeight="35.0" prefWidth="117.0" text="Card Back" textAlignment="RIGHT" textFill="#8d4f26">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="BackButton" layoutX="691.0" layoutY="472.0" onAction="#BackAction" text="back" textFill="#3c1605">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="QuitButton" layoutX="733.0" onAction="#quitAction" text="Quit" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.8380952380952381" endY="0.6333333333333333">
+                     <stops>
+                        <Stop color="#fcfcfc" />
+                        <Stop color="#dd0d0d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton fx:id="Mana0" layoutX="127.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient cycleMethod="REPEAT" endX="0.8380952380952381" endY="0.6333333333333333">
+                     <stops>
+                        <Stop color="#b2a6a6" />
+                        <Stop color="#0f8edb" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton fx:id="Mana1" layoutX="151.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="1" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Mana2" layoutX="176.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="2" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="201.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="3" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Mana4" layoutX="225.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="4" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Mana5" layoutX="250.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="5" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Mana6" layoutX="274.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="6" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="Mana7" layoutX="296.0" layoutY="465.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="7" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="Back1" fitHeight="150.0" fitWidth="151.0" layoutX="76.0" layoutY="91.0" onMouseClicked="#loadCard1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/cardBacks/back1.png" />
+               </image></ImageView>
+            <ImageView fx:id="Back2" fitHeight="150.0" fitWidth="151.0" layoutX="201.0" layoutY="91.0" onMouseMoved="#loadCard2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/cardBacks/back2.png" />
+               </image></ImageView>
+            <ImageView fx:id="Back3" fitHeight="150.0" fitWidth="151.0" layoutX="329.0" layoutY="91.0" onMouseClicked="#loadCard3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/cardBacks/back3.png" />
+               </image></ImageView>
+            <ImageView fx:id="Back4" fitHeight="150.0" fitWidth="151.0" layoutX="445.0" layoutY="91.0" onMouseClicked="#loadCard4" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/cardBacks/back4.png" />
+               </image></ImageView>
+            <ImageView fx:id="Back5" fitHeight="150.0" fitWidth="151.0" layoutX="76.0" layoutY="267.0" onMouseClicked="#loadCard5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/cardBacks/back5.png" />
+               </image></ImageView>
+            <ImageView fx:id="Back6" fitHeight="150.0" fitWidth="151.0" layoutX="201.0" layoutY="267.0" onMouseClicked="#loadCard6" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/cardBacks/back6.png" />
+               </image></ImageView>
+            <ImageView fx:id="Back7" fitHeight="150.0" fitWidth="151.0" layoutX="329.0" layoutY="267.0" onMouseClicked="#loadCard7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/cardBacks/back7.png" />
+               </image></ImageView>
+            <ImageView fx:id="Back8" fitHeight="150.0" fitWidth="151.0" layoutX="445.0" layoutY="267.0" onMouseClicked="#loadCard8" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/cardBacks/back8.png" />
+               </image></ImageView>
+            <JFXButton fx:id="NextButton" layoutX="540.0" layoutY="240.0" onAction="#nextAction" ripplerFill="#824727" text="Next" textFill="#5b1414">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="MainMenu" layoutY="16.0" onAction="#mainMenuAction" text="Main Menu" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.8380952380952381" endY="0.6333333333333333">
+                     <stops>
+                        <Stop color="#fcfcfc" />
+                        <Stop color="#dd0d0d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton fx:id="BackButton" layoutX="733.0" layoutY="450.0" onAction="#backAction" text="BACK" textFill="#fff8f8">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="0.8380952380952381" endY="0.6333333333333333">
+                     <stops>
+                        <Stop color="#fcfcfc" />
+                        <Stop color="#dd0d0d" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

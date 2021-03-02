@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChooseHeroController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="800.0" layoutX="-60.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/cd1.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="BackButton" layoutX="578.0" layoutY="447.0" onAction="#backAction" text="Back" textFill="#431d02">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#803009" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="CollectionButton" layoutX="170.0" layoutY="442.0" onAction="#collectionAction" prefHeight="25.0" prefWidth="136.0" text="My Collection" textFill="#fceeee">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.06666666666666667" startY="0.06666666666666667">
+               <stops>
+                  <Stop color="#171515" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="PlayButton" layoutX="487.0" layoutY="388.0" onAction="#playAction" text="Play" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.16190476190476188" startY="0.12380952380952381">
+               <stops>
+                  <Stop color="#0c0661" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton layoutX="394.0" layoutY="234.0" text="Next">
+         <font>
+            <Font name="System Bold Italic" size="9.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="MainHeroImage" fitHeight="240.0" fitWidth="150.0" layoutX="452.0" layoutY="140.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/paladin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="370.0" fitWidth="317.0" layoutX="77.0" layoutY="52.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/h1.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="PriestButton" layoutX="294.0" layoutY="327.0" onAction="#priestActtion" prefHeight="61.0" prefWidth="77.0" text="choose" textFill="#fffafa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.2761904761904762" startY="0.3238095238095238">
+               <stops>
+                  <Stop color="#e500fa" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="RogueButton" layoutX="294.0" layoutY="104.0" onAction="#rogueAction" prefHeight="61.0" prefWidth="77.0" text="choose" textFill="#fffafa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.19523809523809524" startY="0.1">
+               <stops>
+                  <Stop color="#fa0000" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="PaladinButton" layoutX="93.0" layoutY="220.0" onAction="#paladinAction" prefHeight="61.0" prefWidth="77.0" text="choose" textFill="#fffafa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.16190476190476188" startY="0.12380952380952381">
+               <stops>
+                  <Stop color="#fffb00" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="MageButton" layoutX="197.0" layoutY="327.0" onAction="#mageAction" prefHeight="61.0" prefWidth="77.0" text="choose" textFill="#fffafa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.2761904761904762" startY="0.3238095238095238">
+               <stops>
+                  <Stop color="#00abfa" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="WarlockButton" layoutX="93.0" layoutY="327.0" onAction="#warlockAction" prefHeight="61.0" prefWidth="77.0" text="choose" textFill="#fffafa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.16190476190476188" startY="0.12380952380952381">
+               <stops>
+                  <Stop color="#470772" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+   </children>
+</AnchorPane>

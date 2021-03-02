@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphics.MainMenuController">
+   <children>
+      <AnchorPane>
+         <children>
+            <ImageView fx:id="MainImage" fitHeight="500.0" fitWidth="800.0" pickOnBounds="true">
+               <image>
+                  <Image url="@pictures/edit2.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="StatusButton" layoutX="323.0" layoutY="180.0" onAction="#statusAction" prefHeight="24.0" prefWidth="155.0" ripplerFill="#ffc685" text="status" textFill="#6f4028">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="PlayButton" layoutX="338.0" layoutY="142.0" onAction="#playAction" prefHeight="21.0" prefWidth="124.0" ripplerFill="#dba342" text="play" textFill="#6f4028">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="SettingButton" layoutX="323.0" layoutY="217.0" onAction="#settingAction" prefHeight="24.0" prefWidth="155.0" ripplerFill="#ffc685" text="setting" textFill="#6f4028">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="CollectionButton" layoutX="370.0" layoutY="409.0" onAction="#collectionAction" prefHeight="50.0" prefWidth="143.0" ripplerFill="#ddbd8c" text="My Collection" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ShopButton" buttonType="RAISED" layoutX="87.0" layoutY="447.0" onAction="#shopAction" prefHeight="25.0" prefWidth="54.0" rotate="-18.4" text="shop" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" cycleMethod="REFLECT" focusAngle="147.99" radius="0.5">
+                     <stops>
+                        <Stop color="#e8a254" />
+                        <Stop color="#ddc8b0" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXButton fx:id="QuitButton" layoutX="701.0" onAction="#quitAction" prefHeight="50.0" prefWidth="85.0" text="Quit" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff1500" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <JFXComboBox fx:id="gameMode" focusColor="#b5645d" layoutX="178.0" layoutY="357.0" onAction="#gameModeSelected" prefHeight="25.0" prefWidth="117.0" promptText="game mode" unFocusColor="#392213" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

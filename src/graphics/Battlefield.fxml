@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainAnchorPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="graphics.BattlefieldController">
+   <children>
+      <ImageView fx:id="MainImage" fitHeight="700.0" fitWidth="1021.0" layoutX="-20.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/battle1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Mana1" fitHeight="24.0" fitWidth="31.0" layoutX="722.0" layoutY="628.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/mana_crystal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Mana2" fitHeight="24.0" fitWidth="31.0" layoutX="744.0" layoutY="628.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/mana_crystal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Mana3" fitHeight="24.0" fitWidth="31.0" layoutX="766.0" layoutY="628.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/mana_crystal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Mana4" fitHeight="24.0" fitWidth="31.0" layoutX="788.0" layoutY="628.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/mana_crystal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Mana5" fitHeight="24.0" fitWidth="31.0" layoutX="810.0" layoutY="628.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/mana_crystal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Mana6" fitHeight="24.0" fitWidth="29.0" layoutX="832.0" layoutY="628.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/mana_crystal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Mana7" fitHeight="24.0" fitWidth="31.0" layoutX="854.0" layoutY="628.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/mana_crystal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Mana8" fitHeight="24.0" fitWidth="31.0" layoutX="876.0" layoutY="628.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/mana_crystal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Mana9" fitHeight="24.0" fitWidth="31.0" layoutX="897.0" layoutY="628.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/mana_crystal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Mana10" fitHeight="24.0" fitWidth="24.0" layoutX="920.0" layoutY="628.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/mana_crystal.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="CurrentMana1" layoutX="674.0" layoutY="632.0" prefHeight="17.0" prefWidth="60.0" text="0/0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="CurrentMana2" layoutX="644.0" layoutY="45.0" prefHeight="17.0" prefWidth="60.0" text="0/0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="EndTurnButton" layoutX="840.0" layoutY="303.0" onAction="#endRurnAction" prefHeight="31.0" prefWidth="84.0" text="End Turn">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.37142857142857144" startY="0.24285714285714285">
+               <stops>
+                  <Stop color="#fff600" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <ImageView fx:id="Hero1" fitHeight="196.0" fitWidth="146.0" layoutX="422.0" layoutY="460.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/mage.png" />
+         </image></ImageView>
+      <ImageView fx:id="Hero2" fitHeight="188.0" fitWidth="137.0" layoutX="422.0" layoutY="70.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/mage.png" />
+         </image></ImageView>
+      <ImageView fx:id="HeroPower2" fitHeight="150.0" fitWidth="97.0" layoutX="326.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/heropower/Heal.png" />
+         </image></ImageView>
+      <ImageView fx:id="HeroPower1" fitHeight="150.0" fitWidth="97.0" layoutX="326.0" layoutY="515.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/heropower/Heal.png" />
+         </image></ImageView>
+      <AnchorPane fx:id="Pane11" layoutX="268.0" layoutY="602.0">
+         <children>
+            <ImageView fx:id="HCard11" fitHeight="106.0" fitWidth="73.0" layoutY="-9.0" onDragDetected="#releaseCard11" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane9" layoutX="305.0" layoutY="604.0">
+         <children>
+            <ImageView fx:id="HCard9" fitHeight="97.0" fitWidth="73.0" onMouseReleased="#releaseCard9" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane7" layoutX="334.0" layoutY="602.0">
+         <children>
+            <ImageView fx:id="HCard7" fitHeight="97.0" fitWidth="73.0" onMouseReleased="#releaseCard7" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane12" layoutX="612.0" layoutY="607.0">
+         <children>
+            <ImageView fx:id="HCard12" fitHeight="97.0" fitWidth="73.0" onMouseReleased="#releaseCard12" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane10" layoutX="586.0" layoutY="607.0">
+         <children>
+            <ImageView fx:id="HCard10" fitHeight="97.0" fitWidth="73.0" onMouseReleased="#releaseCard10" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane8" layoutX="564.0" layoutY="604.0">
+         <children>
+            <ImageView fx:id="HCard8" fitHeight="97.0" fitWidth="73.0" onMouseReleased="#releasrCard8" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane6" layoutX="532.0" layoutY="602.0">
+         <children>
+            <ImageView fx:id="HCard6" fitHeight="97.0" fitWidth="73.0" onMouseReleased="#releaseCard6" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane5" layoutX="371.0" layoutY="604.0">
+         <children>
+            <ImageView fx:id="HCard5" fitHeight="97.0" fitWidth="73.0" onMouseReleased="#releaseCard5" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane4" layoutX="500.0" layoutY="602.0">
+         <children>
+            <ImageView fx:id="HCard4" fitHeight="97.0" fitWidth="73.0" onMouseReleased="#releaseCard4" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane3" layoutX="407.0" layoutY="600.0">
+         <children>
+            <ImageView fx:id="HCard3" fitHeight="97.0" fitWidth="73.0" onMouseReleased="#releaseCard3" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane2" layoutX="474.0" layoutY="602.0">
+         <children>
+            <ImageView fx:id="HCard2" fitHeight="97.0" fitWidth="73.0" onMouseReleased="#releaseCard2" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Pane1" layoutX="437.0" layoutY="602.0">
+         <children>
+            <ImageView fx:id="HCard1" fitHeight="106.0" fitWidth="73.0" layoutY="-9.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="QuitButton" layoutX="943.0" layoutY="6.0" onAction="#quitAction" text="Quit" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.37142857142857144" startY="0.24285714285714285">
+               <stops>
+                  <Stop color="#fff600" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="BackAction" layoutX="949.0" layoutY="655.0" onAction="#backAction" text="Back" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.37142857142857144" startY="0.24285714285714285">
+               <stops>
+                  <Stop color="#fff600" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="MainMenuButton" layoutX="14.0" layoutY="6.0" onAction="#mainMenuAction" text="Main Menu" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.37142857142857144" startY="0.24285714285714285">
+               <stops>
+                  <Stop color="#fff600" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <ScrollPane fx:id="MainScrollPane" hbarPolicy="ALWAYS" layoutX="14.0" layoutY="114.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="60.0" vbarPolicy="ALWAYS">
+        <content>
+          <AnchorPane fx:id="HistoryAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="6000.0" prefWidth="70.0">
+               <children>
+                  <ImageView fx:id="HistoryImage" fitHeight="6000.0" fitWidth="80.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@pictures/GameHistory.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ImageView fx:id="ECard12" fitHeight="97.0" fitWidth="73.0" layoutX="570.0" layoutY="-30.0" onMouseReleased="#releaseECard12" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/cardBacks/back1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ECard10" fitHeight="97.0" fitWidth="73.0" layoutX="550.0" layoutY="-30.0" onMouseReleased="#releaseECard10" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/cardBacks/back1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ECard8" fitHeight="97.0" fitWidth="73.0" layoutX="530.0" layoutY="-30.0" onMouseReleased="#releaseECard8" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/cardBacks/back1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ECard6" fitHeight="97.0" fitWidth="73.0" layoutX="510.0" layoutY="-30.0" onMouseReleased="#releaseECard6" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/cardBacks/back1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ECard4" fitHeight="97.0" fitWidth="73.0" layoutX="490.0" layoutY="-30.0" onMouseReleased="#releaseECard4" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/cardBacks/back1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ECard11" fitHeight="97.0" fitWidth="73.0" layoutX="320.0" layoutY="-30.0" onMouseReleased="#releaseECard11" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/cardBacks/back1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ECard9" fitHeight="97.0" fitWidth="73.0" layoutX="340.0" layoutY="-30.0" onMouseReleased="#releaseECard9" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/cardBacks/back1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ECard7" fitHeight="97.0" fitWidth="73.0" layoutX="360.0" layoutY="-30.0" onMouseReleased="#releaseECard7" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/cardBacks/back1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ECard5" fitHeight="97.0" fitWidth="73.0" layoutX="380.0" layoutY="-30.0" onMouseReleased="#releaseECard5" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/cardBacks/back1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ECard3" fitHeight="97.0" fitWidth="73.0" layoutX="400.0" layoutY="-30.0" onMouseReleased="#releaseECard3" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/cardBacks/back1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ECard2" fitHeight="97.0" fitWidth="73.0" layoutX="470.0" layoutY="-30.0" onMouseReleased="#releaseECard2" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/cardBacks/back1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ECard1" fitHeight="97.0" fitWidth="73.0" layoutX="437.0" layoutY="-30.0" onMouseReleased="#releaseECard1" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/cardBacks/back1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="881.0" layoutY="374.0" text="Left Cards:" textFill="#fff7f7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="HLeftCards" layoutX="944.0" layoutY="374.0" text="30" textFill="#f5efef">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="881.0" layoutY="198.0" text="Left Cards:" textFill="#fff7f7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="ELeftCards" layoutX="942.0" layoutY="198.0" text="30" textFill="#f5efef">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="GPane1" layoutX="470.0" layoutY="343.0">
+         <children>
+            <ImageView fx:id="HGCard1" fitHeight="97.0" fitWidth="73.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="GPane3" layoutX="400.0" layoutY="343.0">
+         <children>
+            <ImageView fx:id="HGCard3" fitHeight="97.0" fitWidth="73.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="GPane2" layoutX="540.0" layoutY="343.0">
+         <children>
+            <ImageView fx:id="HGCard2" fitHeight="97.0" fitWidth="73.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="GPane4" layoutX="610.0" layoutY="343.0">
+         <children>
+            <ImageView fx:id="HGCard4" fitHeight="97.0" fitWidth="73.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="GPane6" layoutX="680.0" layoutY="343.0">
+         <children>
+            <ImageView fx:id="HGCard6" fitHeight="97.0" fitWidth="73.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="GPane5" layoutX="330.0" layoutY="343.0">
+         <children>
+            <ImageView fx:id="HGCard5" fitHeight="97.0" fitWidth="73.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="GPane7" layoutX="260.0" layoutY="343.0">
+         <children>
+            <ImageView fx:id="HGCard7" fitHeight="97.0" fitWidth="73.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <Circle layoutX="548.0" layoutY="584.0" radius="20.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="0.8428571428571429" endY="1.0" startX="0.32857142857142857" startY="0.2714285714285714">
+               <stops>
+                  <Stop color="#791f5f" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="437.0" layoutY="584.0" radius="20.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="0.8428571428571429" endY="1.0" startX="0.32857142857142857" startY="0.2714285714285714">
+               <stops>
+                  <Stop color="#791f5f" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Label fx:id="Hp1" layoutX="542.0" layoutY="576.0" prefHeight="17.0" prefWidth="24.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="Armor1" layoutX="434.0" layoutY="576.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Circle layoutX="543.0" layoutY="193.0" radius="20.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="0.8428571428571429" endY="1.0" startX="0.32857142857142857" startY="0.2714285714285714">
+               <stops>
+                  <Stop color="#791f5f" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="437.0" layoutY="193.0" radius="20.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="0.8428571428571429" endY="1.0" startX="0.32857142857142857" startY="0.2714285714285714">
+               <stops>
+                  <Stop color="#791f5f" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Label fx:id="Hp2" layoutX="535.0" layoutY="185.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="Armor2" layoutX="433.0" layoutY="185.0" text="0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="EGPane7" layoutX="260.0" layoutY="220.0">
+         <children>
+            <ImageView fx:id="EGCard7" fitHeight="97.0" fitWidth="73.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="EGPane5" layoutX="330.0" layoutY="220.0">
+         <children>
+            <ImageView fx:id="EGCard5" fitHeight="97.0" fitWidth="73.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="EGPane2" layoutX="540.0" layoutY="220.0">
+         <children>
+            <ImageView fx:id="EGCard2" fitHeight="97.0" fitWidth="73.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="EGPane1" layoutX="470.0" layoutY="220.0">
+         <children>
+            <ImageView fx:id="EHCard1" fitHeight="97.0" fitWidth="73.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="EGPane3" layoutX="400.0" layoutY="220.0">
+         <children>
+            <ImageView fx:id="EGCard3" fitHeight="97.0" fitWidth="73.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="EGPane4" layoutX="610.0" layoutY="220.0">
+         <children>
+            <ImageView fx:id="EGCard4" fitHeight="97.0" fitWidth="73.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="EGPane6" layoutX="680.0" layoutY="220.0">
+         <children>
+            <ImageView fx:id="EGCard6" fitHeight="97.0" fitWidth="73.0" pickOnBounds="true" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="messagesLabel" layoutX="14.0" layoutY="62.0" prefHeight="17.0" prefWidth="287.0" text="messages:" textFill="#b50000" />
+      <ImageView fx:id="Weapon1" fitHeight="106.0" fitWidth="73.0" layoutX="585.0" layoutY="462.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/fire1.png" />
+         </image>
+      </ImageView>
+      <Circle layoutX="601.0" layoutY="582.0" radius="20.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.32857142857142857" startY="0.2904761904761905">
+               <stops>
+                  <Stop color="#fcf700e8" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="649.0" layoutY="582.0" radius="20.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.32857142857142857" startY="0.2904761904761905">
+               <stops>
+                  <Stop color="#fcf700e8" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Label fx:id="Attack1" layoutX="595.0" layoutY="573.0" prefHeight="17.0" prefWidth="24.0" text="0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Durability1" layoutX="647.0" layoutY="573.0" prefHeight="17.0" prefWidth="24.0" text="0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Weapon2" fitHeight="106.0" fitWidth="73.0" layoutX="587.0" layoutY="44.0" pickOnBounds="true">
+         <image>
+            <Image url="@pictures/fire1.png" />
+         </image>
+      </ImageView>
+      <Circle layoutX="647.0" layoutY="164.0" radius="20.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.32857142857142857" startY="0.2904761904761905">
+               <stops>
+                  <Stop color="#fcf700e8" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle layoutX="601.0" layoutY="164.0" radius="20.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.32857142857142857" startY="0.2904761904761905">
+               <stops>
+                  <Stop color="#fcf700e8" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Label fx:id="Durability2" layoutX="637.0" layoutY="153.0" prefHeight="17.0" prefWidth="24.0" text="0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Attack2" layoutX="595.0" layoutY="153.0" prefHeight="17.0" prefWidth="24.0" text="0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
