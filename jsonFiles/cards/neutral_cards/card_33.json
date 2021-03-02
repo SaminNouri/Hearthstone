@@ -1,0 +1,31 @@
+{
+  "InitialManaCost": 1,
+  "SerialNumber": "card_33",
+  "Name": "Strength-in-Numbers",
+  "HeroType": "NEUTRAL",
+  "Type": "SpellCard",
+  "Rarity": "COMMON",
+  "Coin": 10,
+  "Description": "Quest:Spend 10 mana on minions,Reward:Summon a minion from your deck",
+  "NumberOfSpells": 1,
+  "Spell1": {
+    "SpellType": "ConditionalSpell",
+    "Condition": {
+      "ConditionType": "SpendManaOnMinionQuest",
+      "If": "Spell1",
+      "Value": 1
+    },
+
+    "Spell1": {
+      "SpellType": "Summon",
+      "Filter": {
+        "InDeck": true,
+        "Number": 1,
+        "Type": "MinionCard",
+        "Owner": "Friend"
+      },
+      "Repetition": 1
+    }
+  }
+}
+

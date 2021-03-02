@@ -1,0 +1,17 @@
+{
+  "Name": "Heal",
+  "InitialManaCost": 2,
+  "Type": "HeroPower",
+  "HeroType": "PRIEST",
+  "Rarity": "FREE",
+  "Description": "restore 4 health",
+  "Spell1":{
+    "SpellType":"RestoreHealSpell",
+    "Value":4,
+    "Battlecry": true,
+    "Selective": true
+
+  },
+  "NumberOfSpells":1
+
+}

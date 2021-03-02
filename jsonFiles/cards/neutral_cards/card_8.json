@@ -1,0 +1,13 @@
+{
+  "InitialManaCost": 7,
+  "SerialNumber": "card_8",
+  "Name": "Bog-Creeper",
+  "HeroType": "NEUTRAL",
+  "Type": "MinionCard",
+  "BaseHp": 8,
+  "BaseAttack": 6,
+  "Rarity": "COMMON",
+  "Coin": 20,
+  "Taunt":true,
+  "NumberOfSpells":1
+}

@@ -1,0 +1,11 @@
+{
+  "Name": "Gul-Dan",
+  "InitialManaCost": 0,
+  "HeroPower": "Life-Loss",
+  "Type": "HeroCard",
+  "HeroType": "WARLOCK",
+  "Rarity": "FREE",
+  "BaseHp":35,
+  "SerialNumber":"hero_3"
+
+}

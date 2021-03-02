@@ -1,0 +1,74 @@
+{
+  "Name": "Card-Theft",
+  "InitialManaCost": 3,
+  "Type": "HeroPower",
+  "HeroType": "ROGUE",
+  "Rarity": "FREE",
+  "Description": "",
+  "Spell1": {
+    "SpellType": "ConditionalSpell",
+    "Condition":{
+                  "ConditionType":"RogueUpgrade",
+                   "If":["Spell1"],
+                    "Else":["Spell2"]
+                },
+    "Spell1":{
+                 "SpellType":"ComplexSpell",
+                   "Spell1":{
+                               "SpellType":"Steal",
+                                "From":"Current_Deck",
+                                 "Target":"Enemys",
+                                 "Filter":{}
+                            },
+                   "Spell2":{
+                               "SpellType":"AddTo",
+                                "To":"Current_Deck",
+                                 "Target":"Mine"
+
+                            }
+
+              },
+    "Spell2":{
+                "SpellType":"ComplexSpell",
+                 "Spell1":{
+                   "SpellType":"StealAndAdd",
+                     "Spell1":{
+                       "SpellType":"Steal",
+                       "From":"Current_Deck",
+                       "Target":"Enemys",
+                       "Filter":{}
+                     },
+                     "Spell2":{
+                       "SpellType":"AddTo",
+                       "To":"Current_Deck",
+                       "Target":"Mine"
+
+                     }
+
+                   },
+      "Spell2":{
+        "SpellType":"StealAndAdd",
+        "Spell1":{
+          "SpellType":"Steal",
+          "From":"Hand",
+          "Target":"Enemys",
+          "Filter":{}
+        },
+        "Spell2":{
+          "SpellType":"AddTo",
+          "To":"Current_Deck",
+          "Target":"Mine"
+
+        }
+
+      }
+
+
+    }
+
+
+
+             }
+
+  }
+

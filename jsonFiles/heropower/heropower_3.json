@@ -1,0 +1,39 @@
+{
+  "Name": "Life-Loss",
+  "InitialManaCost": 2,
+  "Type": "HeroPower",
+  "HeroType": "WARLOCK",
+  "Rarity": "FREE",
+  "Description": "",
+  "Spell1": {
+    "Target": "Friendly_Hero",
+    "SpellType": "DamageSpell",
+    "Filter": {"Owner": "Friend","Type": "HeroCard"},
+    "Value": 2,
+    "Battlecry": true
+  },
+  "Spell2": {
+    "SpellType":"RandomSpell",
+    "Battlecry": true,
+    "Spell1":{
+      "SpellType":"AddFeature",
+      "Target":"All_Minions",
+      "Filter": {"Type": "MinionCard","Number": 1},
+      "ConditionalTarget": true,
+      "AddedFeature":{"ExtraAttack": 1,"ExtraHp": 1},
+      "Repetition": 1,
+      "Battlecry": true
+    },
+    "Spell2":{
+      "SpellType":"DrawCard",
+      "Repetition":1,
+      "Filter": {"InDeck": true,"Owner": "Friend","Number": 2},
+      "Battlecry": true
+
+    }
+
+  },
+  "NumberOfSpells":2
+
+
+}

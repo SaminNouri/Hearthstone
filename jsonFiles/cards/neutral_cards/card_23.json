@@ -1,0 +1,16 @@
+{
+  "InitialManaCost": 1,
+  "SerialNumber": "card_23",
+  "Name": "Locusts",
+  "HeroType": "NEUTRAL",
+  "Type": "MinionCard",
+  "BaseHp": 1,
+  "BaseAttack": 1,
+  "Rarity": "COMMON",
+  "Race":"BEAST",
+  "Coin": 40,
+  "Description": "Rush",
+  "Rush":true,
+  "NumberOfSpells":1
+
+}

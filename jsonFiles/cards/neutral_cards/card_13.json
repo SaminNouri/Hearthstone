@@ -1,0 +1,29 @@
+{
+  "InitialManaCost": 7,
+  "SerialNumber": "card_13",
+  "Name": "Locust-Swarm",
+  "HeroType": "NEUTRAL",
+  "Type": "SpellCard",
+  "Rarity": "COMMON",
+  "Coin": 40,
+  "Description": "Deal 3 damage to all enemy minions.Restore 3 Health to your hero",
+  "Spell1": {
+      "SpellType": "DamageSpell",
+      "Target": "All_Enemy_Minions",
+    "Filter": {"Owner": "Enemy","Type": "MinionCard"},
+      "Value": 3,
+      "Repetition": 1,
+    "Battlecry": true
+  },
+
+  "Spell2":{
+    "SpellType": "RestoreHealSpell",
+    "Target": "Friendly_Hero",
+    "Filter": {"Owner": "Friend","Type": "HeroCard"},
+    "Value": 3,
+    "Repetition": "1",
+    "Battlecry": true
+  },
+  "NumberOfSpells":2
+
+}

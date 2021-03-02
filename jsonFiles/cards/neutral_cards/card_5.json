@@ -1,0 +1,22 @@
+{
+"InitialManaCost": 5,
+"SerialNumber": "card_5",
+"Name": "Abomination",
+"HeroType": "NEUTRAL",
+"Type": "MinionCard",
+"BaseHp": 4,
+"BaseAttack": 4,
+"Rarity": "RARE",
+"Coin": 60,
+"Description": "Taunt.Deathrattle:Deal 2 damage to ALL characters",
+"Taunt":true,
+"Spell1": {
+"SpellType": "DamageSpell",
+"Target":"All_Characters",
+"Filter": {"InGame": true},
+"Value":2,
+"Repetition":1,
+  "Deathrattle":true
+},
+  "NumberOfSpells":1
+}

@@ -1,0 +1,23 @@
+{
+  "InitialManaCost": 3,
+  "SerialNumber": "card_17",
+  "Name": "Dreadscale",
+  "HeroType": "WARLOCK",
+  "Type": "MinionCard",
+  "BaseHp":2,
+  "BaseAttack":4,
+  "Rarity": "LEGENDARY",
+  "Coin": 20,
+  "Description": "At the end of your turn deal 1 damage to all characters",
+  "Spell1":{
+    "SpellType": "DamageSpell",
+    "Target":"All_Characters",
+    "Value":1,
+    "Repetition":1,
+    "RepeatedEachTurn":true,
+    "AtTheEndOfYourTurn":true,
+    "Battlecry": true
+  },
+  "NumberOfSpells":1
+
+}

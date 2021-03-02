@@ -1,0 +1,16 @@
+{
+  "Name": "The-Silver-Hand",
+  "InitialManaCost": 2,
+  "Type": "HeroPower",
+  "HeroType": "PALADIN",
+  "Rarity": "FREE",
+  "Description": "",
+  "Spell1":{
+    "SpellType":"Summon",
+    "Filter":{ "BaseHp":1, "BaseAttack":1,"Type": "MinionCard","Number": 2,"InGame": false},
+    "Battlecry": true
+
+  },
+    "NumberOfSpells":1
+
+}

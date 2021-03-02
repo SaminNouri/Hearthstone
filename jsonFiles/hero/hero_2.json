@@ -1,0 +1,11 @@
+{
+  "Name": "Valeera-Sanguinar",
+  "InitialManaCost": 0,
+  "HeroPower": "Card-Theft",
+  "Type": "HeroCard",
+  "HeroType": "ROGUE",
+  "Rarity": "FREE",
+  "BaseHp":30,
+  "SerialNumber":"hero_2"
+
+}

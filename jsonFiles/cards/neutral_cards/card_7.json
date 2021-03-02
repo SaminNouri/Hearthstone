@@ -1,0 +1,22 @@
+{
+  "InitialManaCost": 1,
+  "SerialNumber": "card_7",
+  "Name": "Beaming-Sidekick",
+  "HeroType": "NEUTRAL",
+  "Type": "MinionCard",
+  "BaseHp": 2,
+  "BaseAttack": 1,
+  "Rarity": "COMMON",
+  "Coin": 20,
+  "Description": "Battlecry:Give a friendly minion 2 health",
+    "Spell1": {
+      "SpellType": "HealSpell",
+      "SelectiveTarget":"All_Friendly_Minions",
+      "Selective": true,
+      "Filter":{"Owner": "Friend","Type": "MinionCard"},
+      "Value":2,
+      "Repetition":1,
+      "Battlecry":true
+    },
+  "NumberOfSpells":1
+}

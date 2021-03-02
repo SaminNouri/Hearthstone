@@ -1,0 +1,21 @@
+{
+  "InitialManaCost": 8,
+  "SerialNumber": "card_32",
+  "Name": "Tomb-Warden",
+  "HeroType": "NEUTRAL",
+  "Type": "MinionCard",
+  "BaseHp": 6,
+  "BaseAttack": 3,
+  "Rarity": "RARE",
+  "Coin": 10,
+  "Description": "Taunt,Summon a copy of this song",
+  "NumberOfSpells": 1,
+  "Taunt":true,
+  "Spell1": {
+    "SpellType":"Summon",
+    "Filter":{"Name":"Tomb-Warden","Number": 1},
+    "Battlecry": true
+
+
+  }
+}

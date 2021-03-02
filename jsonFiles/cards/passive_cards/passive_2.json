@@ -1,0 +1,20 @@
+{
+  "InitialManaCost": 0,
+  "SerialNumber": "passive_2",
+  "Name": "Expedite",
+  "HeroType": "NONE",
+  "Type": "SpellCard",
+  "Passive":true,
+  "Rarity": "RARE",
+  "Coin": 200,
+  "Description": "minion cards cost 1 less",
+  "Spell1": {
+    "SpellType": "MinionCostLess",
+    "ReapetedEachRurn":true,
+    "Value":1,
+    "Repetition":1,
+    "Battlecry": true
+  },
+  "NumberOfSpells":1
+
+}

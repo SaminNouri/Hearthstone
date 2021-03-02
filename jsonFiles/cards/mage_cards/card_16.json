@@ -1,0 +1,19 @@
+{
+  "InitialManaCost": 2,
+  "SerialNumber": "card_16",
+  "Name": "Arcane-Explosion",
+  "HeroType": "MAGE",
+  "Type": "SpellCard",
+  "Rarity": "COMMON",
+  "Coin": 20,
+  "Description": "Deal 1 damage to all enemy minions",
+  "Spell1":{
+    "SpellType": "DamageSpell",
+    "Filter": {"Owner": "Enemy","Type": "MinionCard"},
+    "Target":"All_Enemy_Minions",
+     "Value":1,
+    "Repetition":1
+  },
+  "NumberOfSpells":1
+
+}

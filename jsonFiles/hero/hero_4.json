@@ -1,0 +1,11 @@
+{
+  "Name": "Prince-Arthas",
+  "InitialManaCost": 0,
+  "HeroPower": "The-Silver-Hand",
+  "Type": "HeroCard",
+  "HeroType": "PALADIN",
+  "Rarity": "FREE",
+  "BaseHp":30,
+  "SerialNumber":"hero_4"
+
+}

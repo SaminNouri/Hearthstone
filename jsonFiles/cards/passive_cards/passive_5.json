@@ -1,0 +1,29 @@
+{
+  "InitialManaCost": 0,
+  "SerialNumber": "passive_5",
+  "Name": "Recycling",
+  "HeroType": "NONE",
+  "Type": "SpellCard",
+  "Passive":true,
+  "Rarity": "RARE",
+  "Coin": 200,
+  "Description": "",
+  "Spell1": {
+    "SpellType": "ConditionalSpell",
+    "RepeatedEachTurn":true,
+    "Condition":{
+      "ConditionType":"FriendlyMinionDies",
+      "Target":"All_Friendly_Minions",
+      "Filter": {"Owner": "Friend","Type": "MinionCard","Condition": true},
+      "If":"Spell1"
+    },
+    "Spell1":{
+      "SpellType":"AddArmor",
+      "Filter": {"Owner": "Friend","Type": "HeroCard"},
+      "Value":2
+
+    }
+  },
+  "NumberOfSpells":1
+
+}

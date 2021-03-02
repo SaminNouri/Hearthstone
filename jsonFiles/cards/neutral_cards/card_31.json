@@ -1,0 +1,13 @@
+{
+  "InitialManaCost":1,
+  "SerialNumber":"card_31",
+  "Name":"Heavy-Axe",
+  "HeroType":"NEUTRAL",
+  "Type":"WeaponCard",
+  "BaseDurability":3,
+  "BaseAttack":1,
+  "Rarity":"COMMON",
+  "Coin":10,
+  "Description":"",
+  "NumberOfSpells":0
+}

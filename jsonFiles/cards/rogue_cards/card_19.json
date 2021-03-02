@@ -1,0 +1,18 @@
+{
+  "InitialManaCost": 1,
+  "SerialNumber": "card_19",
+  "Name": "Friendly-Smith",
+  "HeroType": "ROGUE",
+  "Type": "SpellCard",
+  "Rarity": "COMMON",
+  "Coin": 50,
+  "Description": "Discover a weapon from any class.Add it to your adventure deck with 2/2",
+  "Spell1": {
+    "SpellType":"AddTo",
+    "AddedTo":["Deck"],
+    "Filter": { "Name":"Battle-Axe","InGame": false},
+    "Battlecry": true
+  },
+  "NumberOfSpells":1
+
+}

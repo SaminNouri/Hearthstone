@@ -1,0 +1,37 @@
+{
+  "InitialManaCost":0,
+  "SerialNumber":"card_26",
+  "Race":"MECH",
+  "Name":"Security-Rover",
+  "HeroType":"NEUTRAL",
+  "Type":"MinionCard",
+  "BaseHp":6,
+  "BaseAttack":2,
+  "Rarity":"RARE",
+  "Coin":10,
+  "Description":"Whenever this minion takes damage,summon a 2/3 Mech with Taunt",
+  "NumberOfSpells":1,
+  "Spell1": {
+    "Whenever":true,
+    "Battlecry": true,
+    "SpellType": "ConditionalSpell",
+    "RepeatedEachTurn":true,
+    "Condition":{
+      "ConditionType":"MinionTakesDamage",
+      "Target":"Itself",
+      "Filter": {"Self": true},
+      "If":"Spell1"
+    },
+    "Spell1":{
+      "SpellType":"Summon",
+       "Filter":{"Race":"MECH","Taunt":true,  "BaseHp":3, "BaseAttack":2,"Number": 1,"InGame": false}
+
+    }
+    }
+
+
+
+  }
+
+
+

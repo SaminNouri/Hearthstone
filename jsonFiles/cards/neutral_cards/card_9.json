@@ -1,0 +1,21 @@
+{
+  "InitialManaCost": 5,
+  "SerialNumber": "card_9",
+  "Name": "Madder-Bomber",
+  "HeroType": "NEUTRAL",
+  "Type": "MinionCard",
+  "BaseHp": 4,
+  "BaseAttack": 5,
+  "Rarity": "COMMON",
+  "Coin": 50,
+  "Description": "Battlecry:Deal 6 damage randomly slpit between all other characters",
+    "Spell1": {
+      "SpellType": "DamageSpell",
+      "Target":"Random_Other_Character",
+      "Filter": {"SELF": false,"Number": 3},
+      "Value":"2",
+      "Repetition":1,
+      "Battlecry":true
+    },
+  "NumberOfSpells":1
+}

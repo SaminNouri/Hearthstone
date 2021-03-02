@@ -1,0 +1,16 @@
+{
+  "InitialManaCost": 2,
+  "SerialNumber": "card_10",
+  "Race":"MURLOC",
+  "Name": "Bluegill-Warrior",
+  "HeroType": "NEUTRAL",
+  "Type": "MinionCard",
+  "BaseHp": 1,
+  "BaseAttack": 2,
+  "Rarity": "FREE",
+  "Coin": 0,
+  "Description": "charge",
+  "Charge": true,
+  "NumberOfSpells":0
+
+}

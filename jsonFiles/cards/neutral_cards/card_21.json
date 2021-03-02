@@ -1,0 +1,18 @@
+{
+  "InitialManaCost": 7,
+  "SerialNumber": "card_21",
+  "Name": "Sprint",
+  "HeroType": "NEUTRAL",
+  "Type": "SpellCard",
+  "Rarity": "COMMON",
+  "Coin": 40,
+  "Description": "Draw 4 cards",
+  "Spell1": {
+    "SpellType": "DrawCard",
+    "Filter": {"Number": 4,"InDeck": true,"Owner": "Friend"},
+    "Repetition": 1,
+    "Battlecry": true
+  },
+  "NumberOfSpells":1
+
+}

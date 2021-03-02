@@ -1,0 +1,28 @@
+{
+  "InitialManaCost": 0,
+  "SerialNumber": "passive_3",
+  "Name": "Cult-of-the-Wolf",
+  "HeroType": "NONE",
+  "Type": "SpellCard",
+  "Passive":true,
+  "Rarity": "RARE",
+  "Coin": 200,
+  "Spell1": {
+    "SpellType": "CostLessHeroPower",
+    "Value":1,
+    "ReapetedEachRurn":true,
+    "Repetition":1,
+    "Battlecry": true
+  },
+  "Description": "You cau use your Hero Power twice a turn",
+  "Spell2": {
+    "SpellType": "SetHeroPowerMaxUse",
+    "Target":"Friendly_Hero",
+    "Value": 2,
+    "Repetition":1,
+    "RepeatedEachTurn": true,
+    "Battlecry": true
+  },
+  "NumberOfSpells":1
+
+}

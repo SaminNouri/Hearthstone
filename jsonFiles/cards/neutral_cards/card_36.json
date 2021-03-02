@@ -1,0 +1,13 @@
+{
+  "InitialManaCost":1,
+  "SerialNumber":"card_36",
+  "Name":"Battle-Axe",
+  "HeroType":"NEUTRAL",
+  "Type":"WeaponCard",
+  "BaseDurability":2,
+  "BaseAttack":2,
+  "Rarity":"COMMON",
+  "Coin":10,
+  "Description":"",
+  "NumberOfSpells":0
+}

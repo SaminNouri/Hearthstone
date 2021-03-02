@@ -1,0 +1,20 @@
+{
+  "InitialManaCost": 5,
+  "SerialNumber": "card_29",
+  "Name": "Gnomish-Army-Knife",
+  "HeroType": "PALADIN",
+  "Type": "SpellCard",
+  "Rarity": "COMMON",
+  "Coin": 40,
+  "Description": "Give a minion Charge,Windfury,Divine Shield,Lifesteal,Poisonous,Taunt,Stealth",
+  "Spell1":{ "SpellType":"AddFeature",
+    "Selective": true,
+    "Filter": {"Type": "MinionCard"},
+    "SelectiveTarget": "All_Minions",
+    "AddedFeature": {"DivineShield":true, "Taunt":true, "Windfury":true, "Lifesteal":true, "Poisonous":true},
+    "Battlecry": true
+
+  },
+  "NumberOfSpells":1
+
+}

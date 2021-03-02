@@ -1,0 +1,14 @@
+{
+  "InitialManaCost":1,
+  "SerialNumber":"card_0",
+  "Race":"BEAST",
+  "Name":"Dire-Mole",
+  "HeroType":"NEUTRAL",
+  "Type":"MinionCard",
+  "BaseHp":3,
+"BaseAttack":1,
+"Rarity":"COMMON",
+"Coin":10,
+"Description":"",
+"NumberOfSpells":0
+}

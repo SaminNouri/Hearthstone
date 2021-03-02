@@ -1,0 +1,19 @@
+{
+  "InitialManaCost": 1,
+  "SerialNumber": "card_18",
+  "Name": "Rain-of-Fire",
+  "HeroType": "WARLOCK",
+  "Type": "SpellCard",
+  "Rarity": "COMMON",
+  "Coin": 20,
+  "Description": "Deal 1 damage to all characters",
+  "Spell1":{
+    "SpellType": "DamageSpell",
+    "Target":"All_Characters",
+    "Value":1,
+    "Repetition":1,
+    "Battlecry": true
+  },
+  "NumberOfSpells":1
+
+}

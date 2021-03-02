@@ -1,0 +1,22 @@
+{
+  "InitialManaCost": 5,
+  "SerialNumber": "card_6",
+  "Name": "Antique-Healbot",
+  "HeroType": "NEUTRAL",
+  "Type": "MinionCard",
+  "BaseHp": 3,
+  "BaseAttack": 3,
+  "Rarity": "RARE",
+  "Coin": 60,
+  "Description": "Restore 8 health to your hero",
+    "Spell1": {
+      "SpellType": "RestoreHealSpell",
+      "Target":"Friendly_Hero",
+      "Filter": {"Owner": "Friend","Type": "HeroCard"},
+      "Value":8,
+      "Repetition":1,
+      "Battlecry":true
+    },
+  "NumberOfSpells":1
+
+}

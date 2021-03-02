@@ -1,0 +1,11 @@
+{
+  "Name": "Jaina-Proudmoore",
+  "InitialManaCost": 0,
+  "HeroPower": "Fireblast",
+  "Type": "HeroCard",
+  "HeroType": "MAGE",
+  "Rarity": "FREE",
+  "BaseHp":30,
+  "SerialNumber":"hero_1"
+
+}

@@ -1,0 +1,20 @@
+{
+  "InitialManaCost": 2,
+  "SerialNumber": "card_38",
+  "Name": "Holy-Light",
+  "HeroType": "PALADIN",
+  "Type": "SpellCard",
+  "Rarity": "COMMON",
+  "Coin": 10,
+  "Description": "Restore 6 health",
+  "Taunt":true,
+  "Spell1": {
+    "SpellType": "RestoreHealSpell",
+    "SelectiveTarget":"All_Characters",
+    "Selective": true,
+    "Value":6,
+    "Repetition":1,
+    "Battlecry": true
+  },
+  "NumberOfSpells":1
+}

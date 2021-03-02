@@ -1,0 +1,21 @@
+{
+  "InitialManaCost": 1,
+  "SerialNumber": "card_37",
+  "Name": "Holy-Smite",
+  "HeroType": "PRIEST",
+  "Type": "SpellCard",
+  "Rarity": "COMMON",
+  "Coin": 10,
+  "Description": "Deal 3 damage to a minion",
+  "Taunt":true,
+  "Spell1": {
+    "SpellType": "DamageSpell",
+    "SelectiveTarget":"All_Minions",
+    "Selective": true,
+    "Filter": {"Type": "MinionCard"},
+    "Value":3,
+    "Repetition":1,
+    "Battlecry": true
+  },
+  "NumberOfSpells":1
+}

@@ -1,0 +1,14 @@
+{
+  "InitialManaCost":2,
+  "SerialNumber":"card_2",
+  "Name":"Bloodfen-Raptor",
+  "HeroType":"NEUTRAL",
+  "Type":"MinionCard",
+  "BaseHp":2,
+  "BaseAttack":3,
+  "Rarity":"FREE",
+  "Race":"BEAST",
+  "Coin":0,
+  "Description":"",
+   "NumberOfSpells":0
+}

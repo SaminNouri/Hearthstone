@@ -1,0 +1,13 @@
+{
+  "InitialManaCost":3,
+  "SerialNumber":"card_35",
+  "Name":"Blood-Fury",
+  "HeroType":"NEUTRAL",
+  "Type":"WeaponCard",
+  "BaseDurability":8,
+  "BaseAttack":3,
+  "Rarity":"COMMON",
+  "Coin":10,
+  "Description":"",
+  "NumberOfSpells":0
+}

@@ -1,0 +1,17 @@
+{
+  "Name": "Fireblast",
+  "InitialManaCost": 2,
+  "Type": "HeroPower",
+  "HeroType": "MAGE",
+  "Rarity": "FREE",
+  "Description": "Deal 1 damage.",
+  "Spell1": {
+    "Selective": true,
+    "SelectiveTarget": "All_Characters",
+    "SpellType": "DamageSpell",
+    "Filter": {"InGame": true},
+    "Value": 1,
+    "Battlecry": true
+  }
+
+}

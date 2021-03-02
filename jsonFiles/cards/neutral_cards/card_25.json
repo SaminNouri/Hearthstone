@@ -1,0 +1,23 @@
+{
+  "InitialManaCost": 2,
+  "SerialNumber": "card_25",
+  "Name": "Book-of-Specters",
+  "HeroType": "NEUTRAL",
+  "Type": "SpellCard",
+  "Rarity": "EPIC",
+  "Coin": 40,
+  "Description": "Draw 3 cards,Discard any spell drawn",
+  "Spell1": {
+  "SpellType": "DrawCard",
+  "Repetition":1,
+    "Filter": {"InDeck": true,"Owner": "Friend","Number": 3},
+    "Battlecry": true
+},
+  "Spell2": {
+    "SpellType": "DiscardSpell",
+    "Filter":{"Type":"SpellCard","Drawn":true,"InGame": false},
+    "Battlecry": true
+  },
+  "NumberOfSpells":1
+
+}

@@ -1,0 +1,21 @@
+{
+  "InitialManaCost": 6,
+  "SerialNumber": "card_21",
+  "Name": "Pharaoh-s-Blessing",
+  "HeroType": "NEUTRAL",
+  "Type": "SpellCard",
+  "Rarity": "RARE",
+  "Coin": 40,
+  "Description": "Give a minion 4/4,Divine Shield,and Taunt",
+  "Spell1": {
+    "Selective": true,
+    "SelectiveTarget":"Frienldly_Minion",
+    "Filter": {"Type": "MinionCard","Owner": "Friend"},
+    "SpellType":"AddFeature",
+    "AddedFeature": {"Taunt": true,"DivineShield": true,"ExtraHp": 4,"ExtraAttack": 4},
+    "Battlecry": true
+
+  },
+  "NumberOfSpells":1
+
+}

@@ -1,0 +1,32 @@
+{
+  "InitialManaCost": 0,
+  "SerialNumber": "card_30",
+  "Name": "High-Priest-Amet",
+  "HeroType": "PRIEST",
+  "Type":"MinionCard",
+  "BaseHp":7,
+  "BaseAttack":2,
+  "Rarity": "LEGENDARY",
+  "Coin": 40,
+  "Description": "Whenever you summon a minion set its heath to 7",
+
+    "Spell1": {
+      "SpellType": "ConditionalSpell",
+      "Whenever":true,
+      "Battlecry": true,
+      "Condition":{
+        "ConditionType":"SummonMinion",
+"If":"Spell1"
+},
+"Spell1":{
+"SpellType":"SetHpSpell",
+"ConditionalTarget": true,
+"Value":7,
+"Target":"Summoned_Friendly_Minion",
+"Filter": {"Owner": "Frieand","Type": "MinionCard","Condition": true}
+
+}
+},
+"NumberOfSpells":1
+
+}

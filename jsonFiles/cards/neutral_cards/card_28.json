@@ -1,0 +1,32 @@
+{
+  "InitialManaCost":0,
+  "SerialNumber":"card_28",
+  "Name":"Curio-Collector",
+  "HeroType":"NEUTRAL",
+  "Type":"MinionCard",
+  "BaseHp":4,
+  "BaseAttack":4,
+  "Rarity":"RARE",
+  "Coin":10,
+  "Description":"Whenever you draw a card,gain 1/1",
+  "NumberOfSpells":1,
+  "Spell1": {
+    "Whenever":true,
+    "Battlecry": true,
+      "SpellType": "ConditionalSpell",
+      "Condition":{
+        "ConditionType":"DrawCard",
+        "If":"Spell1"
+      },
+      "Spell1":{
+        "SpellType":"AddFeature",
+        "ConditionalTarget": true,
+        "AddedFeature":{"ExtraAttack": 1,"ExtraHp": 1},
+        "Filter": {"SELF": true}
+
+      }
+
+  }
+
+
+}

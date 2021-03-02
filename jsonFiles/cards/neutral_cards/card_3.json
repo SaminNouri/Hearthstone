@@ -1,0 +1,21 @@
+{
+  "InitialManaCost": 4,
+  "SerialNumber": "card_3",
+  "Name": "Gnomish-Inventor",
+  "HeroType": "NEUTRAL",
+  "Type": "MinionCard",
+  "Rarity": "FREE",
+  "Coin":0,
+  "BaseHp":4,
+  "BaseAttack":2,
+  "Description": "Batthlecry:Draw a card",
+  "Spell1": {
+       "Battlecry":true,
+      "SpellType": "DrawCard",
+       "Target": "InDeck",
+      "Filter": {"Number": 1,"InDeck": true,"Owner": "Friend"},
+      "Repetition":1
+    },
+ "NumberOfSpells":1
+
+}

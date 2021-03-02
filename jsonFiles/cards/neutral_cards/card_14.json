@@ -1,0 +1,12 @@
+{
+  "InitialManaCost":1,
+  "SerialNumber":"card_14",
+  "Name":"Sheep",
+  "HeroType":"NEUTRAL",
+  "Type":"MinionCard",
+  "BaseHp":1,
+  "BaseAttack":1,
+  "Rarity":"FREE",
+  "Coin":0,
+  "NumberOfSpells":0
+}

@@ -1,0 +1,19 @@
+{
+  "InitialManaCost": 1,
+  "SerialNumber": "card_20",
+  "Name": "Sinister-Strike",
+  "HeroType": "ROGUE",
+  "Type": "SpellCard",
+  "Rarity": "COMMON",
+  "Coin": 50,
+  "Description": "Deal 3 damage to the enemy hero",
+  "Spell1":{
+    "SpellType": "DamageSpell",
+    "Filter": {"Owner": "Enemy","Type": "HeroCard"},
+    "Value":3,
+    "Target":"Enemy_Hero",
+    "Battlecry": true
+  },
+  "NumberOfSpells":1
+
+}

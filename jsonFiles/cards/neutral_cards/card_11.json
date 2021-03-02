@@ -1,0 +1,22 @@
+{
+  "InitialManaCost": 9,
+  "SerialNumber": "card_11",
+  "Name": "Alexstrasza",
+  "HeroType": "NEUTRAL",
+  "Race":"DRAGON",
+  "Type": "MinionCard",
+  "BaseHp": 8,
+  "BaseAttack": 8,
+  "Rarity": "LEGENDARY",
+  "Coin":100,
+  "Description": "Battlecry:Set a hero s health to 15",
+    "Spell1": {
+      "SpellType": "SetHpSpell",
+      "Target":"All_Heroes",
+      "Filter": {"Type": "HeroCard"},
+      "Value":15,
+      "Battlecry":true,
+      "Selective": true
+    },
+  "numberOfSpells":1
+}

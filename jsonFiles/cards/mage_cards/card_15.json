@@ -1,0 +1,21 @@
+{
+  "InitialManaCost": 4,
+  "SerialNumber": "card_15",
+  "Name": "Polymorph",
+  "HeroType": "MAGE",
+  "Type": "SpellCard",
+  "Rarity": "FREE",
+  "Coin": 0,
+  "Description": "Transform a minion into a 1/1 sheep",
+    "Spell1":{
+      "SpellType": "TransformSpell",
+      "Filter": {"Type": "MinionCard"},
+      "Selective": true,
+      "SelectiveTarget":"All_Minions",
+      "To":"card_14",
+      "Repetition":1,
+      "Battlecry": true
+    },
+  "NumberOfSpells":1
+
+}

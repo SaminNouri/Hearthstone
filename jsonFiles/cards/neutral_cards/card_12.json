@@ -1,0 +1,21 @@
+{
+  "InitialManaCost": 3,
+  "SerialNumber": "card_12",
+  "Name": "Boisterous-Bard",
+  "HeroType": "NEUTRAL",
+  "Type": "MinionCard",
+  "BaseHp": 2,
+  "BaseAttack": 3,
+  "Rarity": "COMMON",
+  "Coin": 20,
+  "Description": "Battlecry:Give your other minions 1 health",
+    "Spell1":{
+      "SpellType": "HealSpell",
+      "Target":"All_Other_Friendly_Minions",
+      "Filter": {"SELF": false,"Type": "MinionCard","Owner": "Friend"},
+      "Value":1,
+      "Repetition":1,
+      "Battlecry":true
+    },
+  "NumberOfSpells":1
+}

@@ -1,0 +1,27 @@
+{
+  "InitialManaCost": 0,
+  "SerialNumber": "passive_1",
+  "Name": "Small-Backpacks",
+  "HeroType": "NONE",
+  "Type": "SpellCard",
+  "Passive":true,
+  "Rarity": "RARE",
+  "Coin": 200,
+  "Description": "draw 2 cards at the begining of the turn",
+  "Spell1": {
+    "SpellType": "ConditionalSpell",
+    "Repetition":1,
+    "Condition": {
+      "ConditionType": "TurnBegin",
+      "If":"Spell1"
+    },
+    "Spell1": {
+      "SpellType": "DrawCard",
+      "Repetition":1,
+      "Filter": {"InDeck": true,"Owner": "Friend","Number": 1}
+    }
+  },
+  "NumberOfSpells":1
+
+
+}

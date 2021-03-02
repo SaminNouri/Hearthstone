@@ -1,0 +1,19 @@
+{
+  "InitialManaCost": 0,
+  "SerialNumber": "card_22",
+  "Name": "Swarm-Of-Locusts",
+  "HeroType": "NEUTRAL",
+  "Type": "SpellCard",
+  "Rarity": "RARE",
+  "Race":"HUNTER",
+  "Coin": 40,
+  "Description": "Summon 7 1/1 Locusts with rush",
+  "Spell1": {
+    "SpellType": "Summon",
+     "Filter":{"Name":"Locusts","Number": 1,"InGame": false},
+    "Repetition":7,
+    "Battlecry": true
+  },
+  "NumberOfSpells":1
+
+}

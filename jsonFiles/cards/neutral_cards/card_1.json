@@ -1,0 +1,13 @@
+{
+  "InitialManaCost":4,
+  "SerialNumber":"card_1",
+  "Name":"Chillwind-Yeti",
+  "HeroType":"NEUTRAL",
+  "Type":"MinionCard",
+  "BaseHp":5,
+  "BaseAttack":4,
+  "Rarity":"FREE",
+  "Coin":0,
+   "Description":"",
+   "NumberOfSpells":0
+}

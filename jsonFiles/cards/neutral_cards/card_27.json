@@ -1,0 +1,27 @@
+{
+  "InitialManaCost":9,
+  "SerialNumber":"card_27",
+  "Race":"DEMON",
+  "Name":"Sathrovarr",
+  "HeroType":"NEUTRAL",
+  "Type":"MinionCard",
+  "BaseHp":5,
+  "BaseAttack":5,
+  "Rarity":"LEGENDARY",
+  "Coin":10,
+  "Description":"Choose a friendly miniom,add a copy to your hand,battlefield,deck",
+  "NumberOfSpells":1,
+  "Spell1": {
+    "SpellType":"AddTo",
+    "AddedTo":["Deck","Battlefield","Hand"],
+    "Filter": {"Owner":"Friend","Type": "MinionCard"},
+    "Selective": true,
+    "Battlecry": true
+  }
+
+
+
+  }
+
+
+

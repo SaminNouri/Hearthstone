@@ -1,0 +1,22 @@
+{
+  "InitialManaCost": 2,
+  "SerialNumber": "card_4",
+  "Name": "Garrison-Commander",
+  "HeroType": "NEUTRAL",
+  "Type": "MinionCard",
+  "BaseHp": 3,
+  "BaseAttack": 2,
+  "Rarity": "EPIC",
+  "Coin": 50,
+  "Description": "You cau use your Hero Power twice a turn",
+    "Spell1": {
+      "SpellType": "SetHeroPowerMaxUse",
+      "Target":"Friendly_Hero",
+      "Filter": {"Owner": "Friend","Type": "HeroCard"},
+      "Value": 2,
+      "Repetition":1,
+      "RepeatedEachTurn": true,
+      "Battlecry": true
+    },
+  "NumberOfSpells":1
+}

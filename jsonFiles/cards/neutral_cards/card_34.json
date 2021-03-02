@@ -1,0 +1,28 @@
+{
+  "InitialManaCost": 1,
+  "SerialNumber": "card_34",
+  "Name": "Learn-Draconic",
+  "HeroType": "NEUTRAL",
+  "Type": "SpellCard",
+  "Rarity": "COMMON",
+  "Coin": 10,
+  "Description": "Quest:Spend 8 mana on minions,Reward:Summon a 6/6 Dragon",
+  "NumberOfSpells": 1,
+  "Spell1": {
+    "SpellType": "ConditionalSpell",
+    "Battlecry": true,
+    "Condition": {
+      "ConditionType": "SpendManaOnMinionQuest",
+      "If": "Spell1",
+      "Value": 1
+    },
+
+    "Spell1":{
+      "SpellType":"Summon",
+      "Target": "InDeck",
+      "Filter":{"Race":"DRAGON","BaseHp":6,"BaseAttack":6,"InDeck": true,"Number": 1},
+      "Repetition":1
+
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "InitialManaCost": 0,
+  "SerialNumber": "passive_4",
+  "Name": "Crystal-Gem",
+  "HeroType": "NONE",
+  "Type": "SpellCard",
+  "Passive":true,
+  "Rarity": "RARE",
+  "Coin": 200,
+  "Description": "",
+  "NumberOfSpells":1,
+  "Spell1": {
+    "SpellType": "ConditionalSpell",
+    "Repetition":1,
+    "Condition": {
+      "ConditionType": "TurnBegin",
+      "If":"Spell1"
+    },
+    "Spell1": {
+      "SpellType": "AddMana",
+      "Value":1,
+      "ReapetedEachRurn":true,
+      "Repetition":1
+    }
+  }
+}

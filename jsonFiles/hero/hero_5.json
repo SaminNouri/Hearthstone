@@ -1,0 +1,11 @@
+{
+  "Name": "Tyrande-Whisperwind",
+  "InitialManaCost": 0,
+  "HeroPower": "Heal",
+  "Type": "HeroCard",
+  "HeroType": "PRIEST",
+  "Rarity": "FREE",
+  "BaseHp":30,
+  "SerialNumber":"hero_5"
+
+}
