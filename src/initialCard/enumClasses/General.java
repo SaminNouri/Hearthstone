@@ -1,0 +1,46 @@
+package initialCard.enumClasses;
+
+public enum General
+{
+    InitialManaCost,
+    SerialNumber,
+    HeroType,
+    Type,
+    BaseHp,
+    BaseAttack,
+    Rarity,
+    Coin,
+    Locked,
+    Owned,
+    Description,
+    Spell1,
+    Spell2,
+    NumberOfSpells,
+    Name,
+    Race,
+    Charge,
+    Taunt,
+    DivineShield,
+    Attack,
+    Hp,
+    BaseDurability,
+    Durability,
+    HeroPower,
+    Windfury,
+    Lifesteal,
+    Poisonous,
+    Passive,
+    Heropower,
+    Rush,
+    Owner,
+    SELF,
+    Number,
+    Summoned,
+    InGame,
+    Condition,
+    InDeck,
+    Drawn,
+    NO
+
+
+}

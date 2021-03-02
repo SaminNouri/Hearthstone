@@ -1,0 +1,18 @@
+{
+  "next":"soundFiles/next.wav",
+  "addCards":"soundFiles/warlock.wav",
+  "passive":"soundFiles/heropower.wav",
+  "mana":"soundFiles/mana.wav",
+  "game":"soundFiles/game.wav",
+  "entergame":"soundFiles/entergame.wav",
+  "endTurn":"soundFiles/endTurn.wav",
+  "draw":"soundFiles/draw.wav",
+  "death":"soundFiles/death.wav",
+  "buy":"soundFiles/buy.wav",
+  "button":"soundFiles/button.wav",
+  "attack":"soundFiles/attack.wav",
+  "close":"soundFiles/close.wav",
+  "click":"soundFiles/click.wav",
+  "menu":"soundFiles/menu.wav",
+  "gameMusic":"soundFiles/gameMusic.wav"
+}
