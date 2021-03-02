@@ -1,4 +1,4 @@
 # Hearthstone
-<img src="https://s4.gifyu.com/images/hearthstone.gif" width="500" height="400" />
+[![Alt text](https://img.youtube.com/vi/VID/0.jpg)](https://www.youtube.com/watch?v=VID)
 
 
